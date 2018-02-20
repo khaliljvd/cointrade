@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1f2b34</color>
+    <color name="selectSort">#509BE3</color>
+    <color name="selectDefault">#3a444c</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#39efff</color>
+    <color name="hintColor">#cee1f1</color>
+    <color name="textColor">#aaaaaa</color>
+    <color name="darkBackground">#1a2329</color>
+    <color name="darkBackgroundPressed">#151d23</color>
+    <color name="blackBanner">#111518</color>
+    <color name="darkerBackground">#10151a</color>
+    <color name="greenColor">#ffffff</color>
+    <color name="redColor">#F34827</color>
+    <color name="listBackground">#2a3741</color>
+    <color name="itemSelect">#afd4f2</color>
+    <color name="gray_font">#d9d9d9</color>
+</resources>

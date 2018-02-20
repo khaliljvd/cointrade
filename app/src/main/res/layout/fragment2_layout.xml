@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment1"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkerBackground">
+
+    <ProgressBar
+        android:id="@+id/login_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/banner_background"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:background="@color/blackBanner" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_above="@+id/list"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical"
+        android:text="Order History"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp" />
+
+    <ProgressBar
+        android:id="@+id/price_progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="13.5dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/login_progress"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginEnd="17dp" />
+
+    <TextView
+        android:id="@+id/balance_tickers"
+        android:layout_width="60dp"
+        android:layout_height="150dp"
+        android:layout_alignStart="@+id/textView8"
+        android:layout_below="@+id/textView8"
+        android:layout_marginTop="0dp"
+        android:textAlignment="textStart"
+        android:textColor="@android:color/background_light"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="20dp"
+        android:text="Ticker"
+        android:textAlignment="textStart"
+        android:textColor="@android:color/background_light"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView10"
+        android:layout_alignBottom="@+id/textView10"
+        android:layout_toEndOf="@+id/textView10"
+        android:text="(USD)"
+        android:textAlignment="textEnd"
+        android:textColor="@android:color/background_light"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/balance_holdingsUSD"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:layout_alignBaseline="@+id/balance_holdings"
+        android:layout_alignBottom="@+id/balance_holdings"
+        android:layout_toEndOf="@+id/balance_holdings"
+        android:textAlignment="textEnd"
+        android:textColor="@android:color/background_light"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView8"
+        android:layout_alignBottom="@+id/textView8"
+        android:layout_toEndOf="@+id/balance_tickers"
+        android:text="Holdings"
+        android:textAlignment="textEnd"
+        android:textColor="@android:color/background_light"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/balance_holdings"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:layout_alignBaseline="@+id/balance_tickers"
+        android:layout_alignBottom="@+id/balance_tickers"
+        android:layout_toEndOf="@+id/balance_tickers"
+        android:textAlignment="textEnd"
+        android:textColor="@android:color/background_light"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/banner_background"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/login_progress"
+        android:text="Balance"
+        android:textAlignment="textStart"
+        android:textColor="@android:color/background_light"
+        android:textSize="16sp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment1"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ProgressBar
+        android:id="@+id/login_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/banner_background"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/blackBanner" />
+
+    <ImageView
+        android:id="@+id/sort"
+        android:layout_width="match_parent"
+        android:layout_below="@id/banner_background"
+        android:layout_height="25dp"
+        android:background="@color/darkBackgroundPressed" />
+
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:scrollbarSize="3dp"
+        android:scrollbarThumbVertical="@drawable/custom_scroll_style"
+        android:background="@color/darkerBackground"
+        android:layout_below="@+id/sort"></ListView>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical"
+        android:text="Market Overview"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp" />
+
+    <ProgressBar
+        android:id="@+id/price_progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/login_progress"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="17dp"
+        android:layout_toEndOf="@+id/textView" />
+
+    <Button
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/price_progressBar"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/search"
+        android:id="@+id/button"></Button>
+
+    <TextView
+        android:id="@+id/sort_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignBottom="@+id/sort_price"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/sort"
+        android:layout_marginEnd="30dp"
+        android:gravity="center_vertical"
+        android:text="% Change"
+        android:textColor="@color/selectDefault"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/sort_vol"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_above="@+id/list"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_marginEnd="10dp"
+        android:gravity="center_vertical"
+        android:text="Volume"
+        android:textColor="@color/itemSelect"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/sort_price"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignStart="@+id/textView"
+        android:layout_alignTop="@+id/sort"
+        android:layout_marginStart="0dp"
+        android:gravity="center_vertical"
+        android:text="Price"
+        android:textColor="@color/selectDefault"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/sort_ticker"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/sort"
+        android:layout_marginStart="20dp"
+        android:gravity="center_vertical"
+        android:text="Ticker"
+        android:textColor="@color/selectDefault"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/sort_ticker_arrow"
+        android:layout_width="12dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/list"
+        android:layout_below="@+id/banner_background"
+        android:layout_marginStart="6dp"
+        android:layout_toEndOf="@+id/sort_ticker"
+        app:srcCompat="@drawable/sort_default" />
+
+    <ImageView
+        android:id="@+id/sort_price_arrow"
+        android:layout_width="12dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/list"
+        android:layout_below="@+id/banner_background"
+        android:layout_marginStart="6dp"
+        android:layout_toEndOf="@+id/sort_price"
+        app:srcCompat="@drawable/sort_default" />
+
+    <ImageView
+        android:id="@+id/sort_percent_arrow"
+        android:layout_width="12dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/list"
+        android:layout_alignStart="@+id/button"
+        android:layout_alignTop="@+id/sort"
+        android:layout_marginStart="17dp"
+        app:srcCompat="@drawable/sort_default" />
+
+    <ImageView
+        android:id="@+id/sort_vol_arrow"
+        android:layout_width="12dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/list"
+        android:layout_below="@+id/banner_background"
+        android:layout_marginStart="0dp"
+        android:layout_toEndOf="@+id/sort_vol"
+        app:srcCompat="@drawable/sort_default" />
+
+</RelativeLayout>
